@@ -1,0 +1,11 @@
+<div class="row">
+    <app-create-to-do-component (addNewTaskInToDoList)="addNewTaskInToDoList($event)"></app-create-to-do-component>
+</div>
+<div class="row">
+    <div class="column">
+        <app-to-do-list-component [dataForToDoList]="toDoListData" (addToDoneList)="addToDoneList($event)"></app-to-do-list-component>
+    </div>
+    <div class="column">
+        <app-done-list-component [dataForDoneList]="doneListData" (addInToDoList)="addNewTaskInToDoList($event)"></app-done-list-component>
+    </div>
+</div>

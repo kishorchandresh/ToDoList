@@ -1,0 +1,24 @@
+<h3>Done List</h3>
+<table class="listTable">
+    <tr>
+        <th>Task Name</th>
+        <th>Task Description</th>
+        <th>
+            Repeating Task
+        </th>
+    </tr>
+    <tr *ngFor="let listData of dataForDoneList,let i = index">
+        <td>
+            <span>{{listData.taskName}}</span>
+        </td>
+        <td>
+            <span>{{listData.taskDescription}}</span>
+        </td>
+        <td>
+            <span>{{listData.repeatingTask}}</span>
+        </td>
+        <td>
+            <input type="checkbox" checked (change)="onChangeData(i)">
+        </td>
+    </tr>
+</table>

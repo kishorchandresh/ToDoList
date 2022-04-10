@@ -1,0 +1,38 @@
+.row {
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+    /* border: solid salmon; */
+}
+
+.column {
+    flex: 50%;
+}
+
+.column {
+    /* float: left; */
+    /* width: 50%; */
+    margin: 0 10px;
+    /* border: solid rebeccapurple; */
+    padding: auto;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    margin: 0;
+}
+
+.listTable {
+    border: 1px solid;
+}

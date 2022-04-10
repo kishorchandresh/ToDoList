@@ -1,0 +1,47 @@
+<div>
+    <form [formGroup]="addToDoForm">
+
+        <div class="row">
+            <div class="col-25">
+                <label>
+                    Task Name
+                </label>
+
+            </div>
+            <div class="col-75">
+                <input type="text" formControlName="taskName" placeholder="Name of task" required>
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>
+                    Task Description
+                </label>
+
+            </div>
+            <div class="col-75">
+                <textarea formControlName="taskDescription" placeholder=" Description of the task" required></textarea>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>
+                    Repeating Task
+                </label>
+            </div>
+            <div class="col-75">
+
+                <select formControlName="repeatingTask">
+                    <option >Y</option>  
+                    <option >N</option>
+                </select>
+            </div>
+
+        </div>
+
+    </form>
+</div>
